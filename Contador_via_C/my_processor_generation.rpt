@@ -1,0 +1,201 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=F:/Estudos/Contador_via_C/ --output-directory=F:/Estudos/Contador_via_C/my_processor/ --report-file=bsf:F:/Estudos/Contador_via_C/my_processor.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE6E22C8 --system-info=DEVICE_SPEEDGRADE=8 --component-file=F:/Estudos/Contador_via_C/my_processor.qsys
+Progress: Loading Contador_via_C/my_processor.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding nios2_qsys [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer
+Progress: Adding dado [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module dado
+Progress: Adding modo [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module modo
+Progress: Adding local [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module local
+Progress: Adding key [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module key
+Progress: Adding led_yellow [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_yellow
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: my_processor.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=F:/Estudos/Contador_via_C/ --output-directory=F:/Estudos/Contador_via_C/my_processor/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:F:/Estudos/Contador_via_C/my_processor.sopcinfo --report-file=html:F:/Estudos/Contador_via_C/my_processor.html --report-file=qip:F:/Estudos/Contador_via_C/my_processor/synthesis/my_processor.qip --report-file=cmp:F:/Estudos/Contador_via_C/my_processor.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE6E22C8 --system-info=DEVICE_SPEEDGRADE=8 --component-file=F:/Estudos/Contador_via_C/my_processor.qsys --language=VHDL
+Progress: Loading Contador_via_C/my_processor.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding nios2_qsys [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer
+Progress: Adding dado [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module dado
+Progress: Adding modo [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module modo
+Progress: Adding local [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module local
+Progress: Adding key [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module key
+Progress: Adding led_yellow [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_yellow
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: my_processor.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: my_processor: Generating my_processor "my_processor" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 10 modules, 38 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 21 modules, 71 connections
+Info: merlin_domain_transform: After transform: 42 modules, 175 connections
+Info: merlin_router_transform: After transform: 53 modules, 208 connections
+Info: reset_adaptation_transform: After transform: 54 modules, 210 connections
+Info: merlin_network_to_switch_transform: After transform: 75 modules, 268 connections
+Info: merlin_mm_transform: After transform: 75 modules, 268 connections
+Info: merlin_interrupt_mapper_transform: After transform: 76 modules, 271 connections
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: my_processor: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: nios2_qsys: Starting RTL generation for module 'my_processor_nios2_qsys'
+Info: nios2_qsys:   Generation command is [exec F:/altera/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I F:/altera/quartus/common/ip/altera/common/perl/5.8.3 -I F:/altera/quartus/sopc_builder/bin/europa -I F:/altera/quartus/sopc_builder/bin/perl_lib -I F:/altera/quartus/sopc_builder/bin -I F:/altera/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I F:/altera/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I F:/altera/quartus/../ip/altera/nios2_ip/altera_nios2 -I F:/altera/quartus/../ip/altera/nios2_ip/altera_nios2 -- F:/altera/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=my_processor_nios2_qsys --dir=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0001_nios2_qsys_gen/ --quartus_dir=F:/altera/quartus --verilog --config=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0001_nios2_qsys_gen//my_processor_nios2_qsys_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_qsys: # 2023.02.09 11:45:21 (*) Starting Nios II generation
+Info: nios2_qsys: # 2023.02.09 11:45:21 (*)   Checking for plaintext license.
+Info: nios2_qsys: # 2023.02.09 11:45:23 (*)   Couldn't query license setup in Quartus directory F:/altera/quartus
+Info: nios2_qsys: # 2023.02.09 11:45:23 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys: # 2023.02.09 11:45:23 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys: # 2023.02.09 11:45:23 (*)   Plaintext license not found.
+Info: nios2_qsys: # 2023.02.09 11:45:23 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2_qsys: # 2023.02.09 11:45:23 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys: # 2023.02.09 11:45:23 (*)   Creating all objects for CPU
+Info: nios2_qsys: # 2023.02.09 11:45:25 (*)   Generating RTL from CPU objects
+Info: nios2_qsys: # 2023.02.09 11:45:25 (*)   Creating plain-text RTL
+Info: nios2_qsys: # 2023.02.09 11:45:27 (*) Done Nios II generation
+Info: nios2_qsys: Done RTL generation for module 'my_processor_nios2_qsys'
+Info: nios2_qsys: "my_processor" instantiated altera_nios2_qsys "nios2_qsys"
+Info: onchip_memory2: Starting RTL generation for module 'my_processor_onchip_memory2'
+Info: onchip_memory2:   Generation command is [exec F:/altera/quartus/bin/perl/bin/perl.exe -I F:/altera/quartus/common/ip/altera/common/perl/5.8.3 -I F:/altera/quartus/sopc_builder/bin/europa -I F:/altera/quartus/sopc_builder/bin/perl_lib -I F:/altera/quartus/sopc_builder/bin -I F:/altera/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=my_processor_onchip_memory2 --dir=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0002_onchip_memory2_gen/ --quartus_dir=F:/altera/quartus --verilog --config=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0002_onchip_memory2_gen//my_processor_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2: Done RTL generation for module 'my_processor_onchip_memory2'
+Info: onchip_memory2: "my_processor" instantiated altera_avalon_onchip_memory2 "onchip_memory2"
+Info: jtag_uart: Starting RTL generation for module 'my_processor_jtag_uart'
+Info: jtag_uart:   Generation command is [exec F:/altera/quartus/bin/perl/bin/perl.exe -I F:/altera/quartus/common/ip/altera/common/perl/5.8.3 -I F:/altera/quartus/sopc_builder/bin/europa -I F:/altera/quartus/sopc_builder/bin/perl_lib -I F:/altera/quartus/sopc_builder/bin -I F:/altera/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=my_processor_jtag_uart --dir=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0003_jtag_uart_gen/ --quartus_dir=F:/altera/quartus --verilog --config=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0003_jtag_uart_gen//my_processor_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'my_processor_jtag_uart'
+Info: jtag_uart: "my_processor" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: timer: Starting RTL generation for module 'my_processor_timer'
+Info: timer:   Generation command is [exec F:/altera/quartus/bin/perl/bin/perl.exe -I F:/altera/quartus/common/ip/altera/common/perl/5.8.3 -I F:/altera/quartus/sopc_builder/bin/europa -I F:/altera/quartus/sopc_builder/bin/perl_lib -I F:/altera/quartus/sopc_builder/bin -I F:/altera/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=my_processor_timer --dir=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0004_timer_gen/ --quartus_dir=F:/altera/quartus --verilog --config=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0004_timer_gen//my_processor_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: timer: Done RTL generation for module 'my_processor_timer'
+Info: timer: "my_processor" instantiated altera_avalon_timer "timer"
+Info: dado: Starting RTL generation for module 'my_processor_dado'
+Info: dado:   Generation command is [exec F:/altera/quartus/bin/perl/bin/perl.exe -I F:/altera/quartus/common/ip/altera/common/perl/5.8.3 -I F:/altera/quartus/sopc_builder/bin/europa -I F:/altera/quartus/sopc_builder/bin/perl_lib -I F:/altera/quartus/sopc_builder/bin -I F:/altera/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=my_processor_dado --dir=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0005_dado_gen/ --quartus_dir=F:/altera/quartus --verilog --config=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0005_dado_gen//my_processor_dado_component_configuration.pl  --do_build_sim=0  ]
+Info: dado: Done RTL generation for module 'my_processor_dado'
+Info: dado: "my_processor" instantiated altera_avalon_pio "dado"
+Info: modo: Starting RTL generation for module 'my_processor_modo'
+Info: modo:   Generation command is [exec F:/altera/quartus/bin/perl/bin/perl.exe -I F:/altera/quartus/common/ip/altera/common/perl/5.8.3 -I F:/altera/quartus/sopc_builder/bin/europa -I F:/altera/quartus/sopc_builder/bin/perl_lib -I F:/altera/quartus/sopc_builder/bin -I F:/altera/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=my_processor_modo --dir=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0006_modo_gen/ --quartus_dir=F:/altera/quartus --verilog --config=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0006_modo_gen//my_processor_modo_component_configuration.pl  --do_build_sim=0  ]
+Info: modo: Done RTL generation for module 'my_processor_modo'
+Info: modo: "my_processor" instantiated altera_avalon_pio "modo"
+Info: key: Starting RTL generation for module 'my_processor_key'
+Info: key:   Generation command is [exec F:/altera/quartus/bin/perl/bin/perl.exe -I F:/altera/quartus/common/ip/altera/common/perl/5.8.3 -I F:/altera/quartus/sopc_builder/bin/europa -I F:/altera/quartus/sopc_builder/bin/perl_lib -I F:/altera/quartus/sopc_builder/bin -I F:/altera/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=my_processor_key --dir=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0007_key_gen/ --quartus_dir=F:/altera/quartus --verilog --config=C:/Users/johan/AppData/Local/Temp/alt9397_6850180357745939771.dir/0007_key_gen//my_processor_key_component_configuration.pl  --do_build_sim=0  ]
+Info: key: Done RTL generation for module 'my_processor_key'
+Info: key: "my_processor" instantiated altera_avalon_pio "key"
+Info: nios2_qsys_instruction_master_translator: "my_processor" instantiated altera_merlin_master_translator "nios2_qsys_instruction_master_translator"
+Info: nios2_qsys_jtag_debug_module_translator: "my_processor" instantiated altera_merlin_slave_translator "nios2_qsys_jtag_debug_module_translator"
+Info: nios2_qsys_instruction_master_translator_avalon_universal_master_0_agent: "my_processor" instantiated altera_merlin_master_agent "nios2_qsys_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent: "my_processor" instantiated altera_merlin_slave_agent "nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "my_processor" instantiated altera_avalon_sc_fifo "nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "my_processor" instantiated altera_merlin_router "addr_router"
+Info: id_router: "my_processor" instantiated altera_merlin_router "id_router"
+Info: rst_controller: "my_processor" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "my_processor" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: "my_processor" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "my_processor" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: "my_processor" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file F:/Estudos/Contador_via_C/my_processor/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: irq_mapper: "my_processor" instantiated altera_irq_mapper "irq_mapper"
+Info: my_processor: Done my_processor" with 21 modules, 123 files, 2382531 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

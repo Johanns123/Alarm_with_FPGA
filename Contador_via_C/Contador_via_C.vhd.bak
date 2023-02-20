@@ -1,0 +1,56 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity Contador_via_C is
+	port(
+		signal CLK_50 : in std_logic;
+		signal RESET  : in std_logic;
+		signal KEY	  : in std_logic_vector(3 downto 0);
+		signal HEX1, HEX3, HEX2, HEX4	  : out std_logic;
+		signal SEG	  : out std_logic_vector(6 downto 0)
+	);
+	
+end entity Contador_via_C;
+
+
+architecture hardware of Contador_via_C is
+
+signal clk : std_logic;
+signal display1, display2, display3, display4 : std_logic;
+signal Tseg 			: std_logic_vector(6 downto 0);
+signal dado_reg   	: unsigned (3 downto 0);
+signal modo_reg		: unsigned (1 downto 0);
+signal local_reg	   : unsigned (1 downto 0);
+signal contador		: unsigned (29 downto 0);
+
+component Controlador_display_paralelo is
+	port(
+		signal clk 		: in std_logic;
+		signal key		: in std_logic;
+		signal RESET   : in std_logic;
+		signal dado    : in unsigned (3 downto 0);
+		signal modo		: in unsigned (1 downto 0);
+		signal local   : in unsigned (1 downto 0);
+		signal HEX1, HEX3, HEX2, HEX4	  : out std_logic;
+		signal SEG	  : out std_logic_vector(6 downto 0)
+	);
+	
+end component Controlador_display_paralelo;
+
+
+begin
+	
+	clk <= CLK_50;
+	
+	HEX1 <= not display1;
+	HEX2 <= not display2;
+	HEX3 <= not display3;
+	HEX4 <= not display4;
+	SEG <= not Tseg;
+	
+	
+		
+cont_disp : controlador_display_paralelo port map(clk, KEY(3), RESET, dado_reg, modo_reg, local_reg,
+				display1, display2, display3, display4, Tseg);	
+end architecture hardware;
